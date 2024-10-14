@@ -22,7 +22,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar}) => {
       
       <div className="text-center text-xl divide ">
       <h3 className="m-2">
-        <Link href="/Home/1">
+        <Link href="/1">
           <span className="text-white hover:text-[#1396a0] transform scale-105 transition-colors duration-300 ease-out">
             الرئيسية
           </span>
@@ -32,6 +32,13 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar}) => {
         <Link href="/MangaFilter/undefined/1">
           <span className="  text-white hover:text-[#1396a0] transition-colors">
             قائمة المانحا
+          </span>
+        </Link>
+      </h3>
+      <h3 className="m-2">
+        <Link href="/Profile">
+          <span className="text-white hover:text-[#1396a0] transform scale-105 transition-colors duration-300 ease-out">
+             الملف الشخصي
           </span>
         </Link>
       </h3>

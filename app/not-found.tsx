@@ -25,7 +25,7 @@ const NotFoundPage = () => {
         <p className="mt-4 text-3xl font-semibold md:text-4xl">Page Not Found</p>
         <p className="mt-2 text-gray-400">Sorry, the page you are looking for does not exist.</p>
         <Link
-          href="/Pages/Home/1"
+          href="/1"
           className="mt-6 inline-block px-6 py-3 text-lg font-medium text-white bg-blue-600 rounded hover:bg-blue-700 transition duration-300"
         >
           Go to Home

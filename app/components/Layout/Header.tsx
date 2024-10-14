@@ -75,7 +75,7 @@ const Header =  () => {
       > 
       متقدم  
       </motion.div></Link> */}
-      <Link href="/Home/1">
+      <Link href="/1">
       <motion.div
        className=" rounded-lg bg-slate-800 p-2 text-center  text-sky-400"
       variants={HeaderLinksVariants(0.5, -100, 50)}

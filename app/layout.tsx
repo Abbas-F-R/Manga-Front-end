@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-
+import './styles/globals.css'
+import React from "react";
+import { Providers } from "./Redux/Provider";
+import PageTransitionEffect from "./(Pages)/_app";
+import Header from "./components/Layout/Header";
+import Footer from "./components/Layout/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,7 +20,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className=" bg-black">
+        <Providers>
+       <PageTransitionEffect>  
+        <Header />
+        {/* <div className="bg-gradient-to-b  from-gray-800 via-black  to-gray-800  "> */}
+            {children} 
+        {/* </div> */}
+        <Footer />
+         </PageTransitionEffect>
+        </Providers>
+      </body>
     </html>
   );
 }

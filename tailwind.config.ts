@@ -7,7 +7,12 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
+    extend: 
+     {       
+            borderRadius: {
+              'custom-shape': '0% 80% 15% 55% / 57% 80% 20% 43%',
+            },
+          
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
